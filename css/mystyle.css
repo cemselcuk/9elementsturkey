@@ -1,0 +1,317 @@
+body {
+  margin:0; font-family: "FS Albert Pro";
+}
+
+*:focus {
+    outline: none;
+}
+
+h1 {
+  line-height: 60px;
+  letter-spacing: 1px; 
+  font-size: 32px;
+  font-weight: 100;
+}
+
+h5 {
+  font-size: 16px;
+  font-variant: normal;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  line-height: 27px;
+}
+
+p {
+  font-size: 16px;
+  font-variant: normal;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  line-height: 27px;
+
+}
+
+button {background:none; border:;}
+
+.c2abutton{
+  border:none;
+  background-image: url(../images/c2abutton.png);
+  height: 75px;
+  width: 256px;
+  margin-top: 10px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c2abutton:hover {
+  background-image: url(../images/c2abuttonhover.png);
+  cursor: pointer;
+  border:none;
+}
+
+.c2abutton:target {
+  border:none;
+  box-shadow: none;
+}
+
+/*FLOATING MENU--------------*/
+
+.bottomMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  background: #fafafa;
+  z-index: 3000;
+}
+
+.bottomMenu-tepe {
+  width: 800px;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  overflow: hidden;
+}
+
+#bottomMenu-tepe-logo {
+  height: 30px;
+  width: auto;
+  float: left;
+  margin: auto auto;
+}
+
+#bottomMenu-tepe-logo img {
+  height: auto;
+  width: 90px;
+  margin-top: 4px;
+  float: left;
+}
+
+#navigation {
+  margin-top: -2px; 
+  position: absolute;
+  list-style-type: none;
+  float: right;
+  display: inline;
+  right: 0%;
+  clear: both;
+  height:35px;
+}
+
+#navigation li {
+  display: inline;
+  margin:0;
+}
+
+#navigation li a {
+  padding: 10px;
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-block;
+  height: 35px;
+  text-decoration: none;
+  background-color: #fafafa;
+  color: black;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+#navigation li a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #e5e5e5;
+}
+
+#navigation li.current a {
+  background: #D5D5D5;
+  text-decoration: none;
+}
+
+/* BODY --------------------*/
+
+#content { display: block; width: 100%; overflow: hidden; }
+
+.wrapper { 
+  display: block;
+  min-width: 380px; 
+  margin: 0 auto;
+  width: 100%;
+}
+
+#photopart {
+  background-image:url(../images/first.jpg);
+  width: 100%;
+  height: 800px;
+  color:white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0px;
+  min-height: 500px;
+}
+
+#logo {
+  height: auto;
+  width: 90px;
+  margin-left: 0px;
+}
+
+.tepe {
+    text-align: justify; 
+    width: 800px;
+    margin: 0px auto;
+    top: 0px;   
+    height: 70px;
+}
+
+.tepe:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    font-size:0;
+    line-height:0;
+}
+
+#tepe-nav {
+  margin-top: 25px;
+  position: relative;
+  list-style-type: none;
+  float: right;
+  display: inline;
+  right: 0%;
+  clear: both;
+}
+
+#tepe-nav li {
+  display: inline;
+  margin:0;
+}
+
+#tepe-nav li a {
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-block;
+  height: 30px;
+  padding: 10px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: white;
+}
+
+#tepe-nav li a:hover {
+  color: #312b2b;
+}
+
+.headline {
+  margin: 160px auto;
+  width: 820px;
+  height: 650px;
+  vertical-align: middle;
+  text-align: center;
+  display: block;
+  line-height: 25px;
+}
+
+.headline h1 {line-height: 60px; font-size: 30px;}
+.headline h5 {line-height: 10px;letter-spacing: 0.5px}
+
+#whatwedo {
+  margin: 5px auto;
+  width: 800px;
+  padding-top: 30px;
+  text-align:center;
+  color: #2a2a2a;
+  min-height: 500px;
+}
+
+.tables {
+  text-align: justify;
+  width: 800px;
+  margin: auto;
+    /* IE special */  
+    margin: auto;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    color:white;
+}
+
+#socialmedia {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  background-image: url(../images/socialgraph.png);
+  width: 390px;
+  height: 390px;
+  float: left;
+}
+
+#digitalproducts {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  float: left;
+  background-image: url(../images/digiproduct.png);
+  width: 390px;
+  height: 390px;
+}
+
+#tabletext {
+  margin-left: 40px;
+  margin-top: 15px;
+  width: 250px;
+  float: left;
+  text-align: left;
+}
+
+#tabletext h1 {line-height: 20px}
+
+table {
+  width: 300px;
+  margin: auto;
+  height: 280px;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+#footer {
+  height: 500px;
+  width: 100%;
+  background-color: #f3f3f3;
+  margin: auto;
+  vertical-align: middle;
+  position: absolute;
+  padding-top: 50px;
+}
+
+.footertext {
+  width: 482px;
+  margin-top: 30px;
+  float: left;
+  color: #2a2a2a; 
+}
+
+.footertext p {line-height: 20px; font-size: 18px; letter-spacing: 0.5px;}
+.footertext h2 {line-height: 50px; margin-bottom: 50px;}
+.footertext h1 {line-height: 0px; letter-spacing: 0px;}
+
+.footerbutton {
+  float: right;
+  margin-top: 30px;
+  margin-right: 0px;
+}
+
